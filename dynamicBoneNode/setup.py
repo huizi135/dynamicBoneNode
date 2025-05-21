@@ -8,7 +8,7 @@ importlib.reload(lib)
 
 pluginPath = os.path.join(os.path.dirname(__file__), "dynamicBoneNode.py")
 
-#load necessary plugins
+#load necessary plugins...
 if not mc.pluginInfo(pluginPath, query=True, loaded=True):
     try:
         mc.loadPlugin(pluginPath)
